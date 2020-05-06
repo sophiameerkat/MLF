@@ -1,0 +1,3 @@
+run problem 7: python3 MLHW3_7.py
+run problem 8: python3 MLHW3_8.py
+First, I use "wget (url)" to get the data, the file name of train data is called"hw3_train.dat" and the file name of test data is called "hw3_test.dat". Next, Ido some preprocess of the data. Then use the sentence taught in class to calculate the gradient descent version and the stochastic gradient descent version individually. For the calculation of Ein, test the result with train data y, and for the calculation of Eout, test the result with test data y.
