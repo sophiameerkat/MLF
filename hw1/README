@@ -1,0 +1,36 @@
+Problem 6:(The execution method: python3 ml1_p6.py)
+I put the data in a file call "hw1_15", and use open function to open it. Next,
+I preprocess the data and put them in a 2D array called data (data[i] contains
+the information of the i-th line in the data file). For the 1126 times of
+testing, I initialize the array w to zero first (w is the weight array which
+contains 5 elements) and shuffle the data. I use a while loop for correcting
+the train model and use a variable call flag to
+decide whether all the data is correct. In the loop, calculate the sign of the
+dot of x and w. If the sign is not equal to y, then update the w and plus 1 to
+the number of error. Otherwise,
+plus 1 to the number of correctness. If the number of correctness is equal to
+the number of the data count, which means that the best w is found and can
+break the loop. I also add the number of updates every time to an array and
+use it to draw the histogram.
+
+Problem 7: (The execution method: python3 ml1_p7.py)(It will run for 3 minutes)
+I put the data in a file call "hw1_18_train", and use open function to open it. Next,
+I preprocess the data and put them in a 2D array called traindata (traindata[i] contains
+the information of the i-th line in the data file). I also do the same thing
+for the test data (the file is call "hw1_18_test" and the array is call
+testdata). For the 1126 times of testing, I initialize the array w to zero
+first and use it the calculate how much error will this w cause for all the
+data in traindata. Then I use a loop to do 100 times of updating, in the loop,
+I use randrange to find a index in the length of the array and 
+calculate the sign of the dot of x and w. If the sign is not equal to y, then
+update the w and check for all the data in dataset for how many error will
+cause. If the error is more than the previous error, update the previous error
+and add the w to bestw. After updating for 100 times, I use it to test on the
+testdata and records its error rate and also add the error rate every time to
+an array and use it to draw the histogram.
+
+Problem 8: (The execution method: python3 ml1_p8.py)
+The preprocess steps are the same as those in problem 7. And the updating
+method of the train data is the same as that in problem 6. After updating for
+100 times, I use it to test on the testdata and calculate the error rate and
+use them to draw the histogram.
